@@ -1,7 +1,8 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      <h1 class="title">Crypto Finder</h1>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +10,57 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Home">Hello</app-explore-container> -->
+  <h1 class="img-title"> Checkout the Latest Updates on all of your favorite currencies!</h1>
+
+
+<div class="bit-coin-container" >
+  <button (click)= "coinInfo(result)"  class="bitclick">Bitcoin</button>
+
+<div class="info-bit" *ngFor="let item of result" >  
+<h1 class="img-title"> {{item.id}}</h1>
+
+<ion-img src={{item.image.small}}></ion-img>
+<p class ="info-price"> Current Price: {{item.market_data.current_price.usd}} </p>
+<p class="info-price"> 24 Hour Price Change: {{item.market_data.price_change_24h_in_currency.usd}} </p>
+
+<p class="info-price"> Price Change Percentage Over 30 Days: {{item.market_data.price_change_percentage_30d}} </p>
+
+<p class="info-price"> Price Change Percentage Over 1 Year: {{item.market_data.price_change_percentage_1y}} </p>
+</div> 
+
+<button (click)="coinDist(eresult)" class="eitclick">Ethereum</button>
+<div class="info-bit" *ngFor="let item of eresult">
+  <h1 class="img-title"> {{item.id}}</h1>
+
+  <ion-img src={{item.image.small}}></ion-img>
+  <p class="info-price"> Current Price: {{item.market_data.current_price.usd}} </p>
+  <p class="info-price"> 24 Hour Price Change: {{item.market_data.price_change_24h_in_currency.usd}} </p>
+
+  <p class="info-price"> Price Change Percentage Over 30 Days: {{item.market_data.price_change_percentage_30d}} </p>
+
+  <p class="info-price"> Price Change Percentage Over 1 Year: {{item.market_data.price_change_percentage_1y}} </p>
+</div>
+
+<button (click)="coinFinal(dresult)" class="eitclick">Dodge Coin</button>
+
+<div class="info-bit" *ngFor="let item of dresult">
+  <h1 class="img-title"> {{item.id}}</h1>
+
+  <ion-img src={{item.image.small}}></ion-img>
+  <p class="info-price"> Current Price: {{item.market_data.current_price.usd}} </p>
+  <p class="info-price"> 24 Hour Price Change: {{item.market_data.price_change_24h_in_currency.usd}} </p>
+
+  <p class="info-price"> Price Change Percentage Over 30 Days: {{item.market_data.price_change_percentage_30d}} </p>
+
+  <p class="info-price"> Price Change Percentage Over 1 Year: {{item.market_data.price_change_percentage_1y}} </p>
+</div>
+
+</div>
+
 </ion-content>
+

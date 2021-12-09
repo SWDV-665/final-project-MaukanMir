@@ -1,0 +1,94 @@
+.title{
+    background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+display: flex;
+justify-content: center;
+padding: 20px;
+font-size: 2.5rem;
+font-weight: bold;
+letter-spacing: 10px;
+text-transform: uppercase;
+}
+
+.title:hover{
+color:white;
+background-color: #7f53ac;
+background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.bit-coin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.img-title{
+    text-transform: capitalize;
+   color:#8E2DE2;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.bitcoin-title{
+    object-fit: cover;
+    width:320px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 2px solid white;
+     margin-left: 20px;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.bitclick{
+    color:white;
+    background-color: #8E2DE2;
+    padding:20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 40px;
+}
+
+.bitclick:hover{
+    background-color:#1fd1f9;
+}
+
+.bit-coin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px 0px;
+    flex-direction: column;
+}
+
+.info-bit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px 0px;
+    flex-direction: column;
+}
+
+.info-price{
+    color:#1fd1f9;
+    font-size: 32px;
+}
+
+.eitclick{
+    margin: 40px;
+    color:white;
+    background-color: #8E2DE2;
+    padding:20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.eitclick:hover{
+    background-color:#1fd1f9;
+}

@@ -1,0 +1,47 @@
+
+.title{
+display: flex;
+justify-content: center;
+padding: 20px;
+letter-spacing: 10px;
+color: white;
+background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-size: 2.5rem;
+}
+
+.name{
+    color:#8E2DE2;
+    font-size: 2rem;
+
+}
+
+.email{
+    color:#8E2DE2;
+    font-size: 2rem;
+}
+
+.subject{
+    color:#8E2DE2;
+    font-size: 2rem;
+}
+
+.message{
+    color:#8E2DE2;
+    font-size: 2rem;
+}
+ion-card-subtitle{
+    color:#8E2DE2;
+    font-size: 2rem;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ion-activatable {
+    margin: 10px;
+
+}
